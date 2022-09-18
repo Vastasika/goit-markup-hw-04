@@ -17,20 +17,28 @@
       <div class="header-container">
          <a href="#" class="header-logo">Web<span class="header-logo-span">Studio</span></a>
       <nav class="header-nav">
-               <ul class="header-list list">
+          <ul class="header-list list">
           <li><a href="index.html" class="header-item">Студія</a></li>
           <li><a href="/portfolio.html" class="header-item current">Портфоліо</a></li>
           <li><a href="#" class="header-item">Контакти</a></li>
         </ul>
       </nav>
       <ul class="contacts-nav list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link-tel">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link">
+          <svg viewBox="0 0 32 32" width="16px" height="12px" class="contacts-icon">
+          <use href="images/icons.svg#icon-envelope"></use>
+        </svg>
+          info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="link-tel">
+           <svg viewBox="0 0 32 32" width="10px" height="16px" class="contacts-icon">
+          <use href="images/icons.svg#icon-smartphone"></use>
+        </svg>
+        +38 096 111 11 11</a></li>
       </ul>
       </div>
     </header>
    <main>
-    <!-- Фільтр кеопки -->
+    <!-- Фільтр кнопки -->
     <section class="portfolio-filters">
       <div class="portfolio-container">
     <ul class="potfolio-filters-list list">
@@ -46,68 +54,86 @@
     
     <ul class="portfolio-list list">
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
           <img src="images/technocrack.jpg" alt="Веб-сайт Технокряк " width="370">
           <div class="portfolio-content">
           <h2 class="portfolio-title">Технокряк</h2>
           <p class="portfolio-text">Веб-сайт</p>
           </div>
+        </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
             <img src="images/poster.jpg" alt="Дизайн Постер New Orlean vs Golden Star" width="370">
            
            <div class="portfolio-content"> 
             <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
             <p class="portfolio-text">Дизайн</p>
             </div>
+          </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
             <img src="images/restaurant.jpg" alt="Додаток Ресторан Seafood" width="370">
             <div class="portfolio-content">
             <h2 class="portfolio-title">Ресторан Seafood</h2>
             <p class="portfolio-text">Додаток</p>
           </div>
+        </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
           <img src="images/prime.jpg" alt="Маркетинг Проєкт Prime " width="370">
          <div class="portfolio-content">
           <h2 class="portfolio-title">Проект Prime</h2>
           <p class="portfolio-text">Маркетинг</p>
         </div>
+      </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
             <img src="images/boxes.jpg" alt="Додаток Проєкт Boxes" width="370">
            <div class="portfolio-content">
             <h2 class="portfolio-title">Проект Boxes</h2>
             <p class="portfolio-text">Додаток</p>
           </div>
+        </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
             <img src="images/inspiration.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
             <div class="portfolio-content">
             <h2 class="portfolio-title">Inspiration has no Borders</h2>
             <p class="portfolio-text">Веб-сайт</p>
             </div>
+          </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
           <img src="images/edition.jpg" alt="Дизайн Видання Limited Edition " width="370">
           <div class="portfolio-content">
           <h2 class="portfolio-title">Видання Limited Edition</h2>
          <p class="portfolio-text">Дизайн</p>
         </div>
+      </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
             <img src="images/lab.jpg" alt="Дизайн Проєкт LAB" width="370">
             <div class="portfolio-content">
             <h2 class="portfolio-title">Проект LAB</h2>
             <p class="portfolio-text">Маркетинг</p>
           </div>
+        </a>
         </li>
         <li  class="portfolio-item">
+          <a href="#" class="portfolio-link">
             <img src="images/growing.jpg" alt="Додаток Growing Business" width="370">
             <div class="portfolio-content">
             <h2 class="portfolio-title">Growing Business</h2>
             <p class="portfolio-text">Додаток</p>
           </div>
+        </a>
         </li>
     </ul>
     </div>
@@ -116,7 +142,8 @@
 
    <!-- Футер -->
     <footer class="footer">
-       <div class="footer-container">
+      <div class="footer-container">
+        <div class="footer-info">
       <a href="#" class="footer-logo">Web<span class="footer-logo-span">Studio</span></a>
       <address>
         <ul class="footer-list list">
@@ -125,7 +152,7 @@
               href="https://goo.gl/maps/soxBMToyXL3o1oz78"
               target="_blank"
               rel="noreferrer noopener nofollow"
-             class="address">
+              class="address" >
               м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
@@ -137,7 +164,40 @@
           </li>
         </ul>
       </address>
+    </div>
+      
+
+      <!-- Підписка -->
+      <div class="follow">
+        <strong class="follow-title">приєднуйтесь</strong>
+        <ul class="follow-list list">
+      <li class="follow-item">
+        <a href="#" class="follow-icon">
+          <svg viewBox="0 0 32 32" width="20px" class="cliets-icon">
+          <use href="images/icons.svg#icon-instagram"></use>
+        </svg></a>
+      </li>
+      <li class="follow-item">
+        <a href="#" class="follow-icon">
+           <svg viewBox="0 0 32 32" width="20px" class="cliets-icon">
+          <use href="images/icons.svg#icon-twitter"></use>
+        </svg></a>
+      </li>
+      <li class="follow-item">
+        <a href="#" class="follow-icon">
+            <svg viewBox="0 0 32 32" width="20px" class="cliets-icon">
+          <use href="images/icons.svg#icon-facebook"></use>
+        </svg></a>
+      </li>
+      <li class="follow-item">
+        <a href="#" class="follow-icon">
+            <svg viewBox="0 0 32 32" width="20px" class="cliets-icon">
+          <use href="images/icons.svg#icon-linkedin"></use>
+        </svg></a>
+      </li>
+        </ul>
+      </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -9,6 +9,7 @@
     --accent-background:#188CE8;
     --border-heder-color:#ECECEC;
     --border-portfolio:#EEEEEE;
+    --primary-icon-color: #AFB1B8;
     --primary-footer-contacts:rgba(255, 255, 255, 0.6);
 }
 
@@ -59,7 +60,9 @@ section{
 .work-container,
 .team-container,
 .portfolio-container,
-.footer-container{
+.footer-container,
+.clients-container
+{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -138,7 +141,8 @@ margin-right: 50px;
 
 .link,
 .link-tel{
-     display: block;
+     display: flex;
+     align-items: center;
      padding: 32px 0; 
 
      font-weight: 500;
@@ -148,13 +152,26 @@ margin-right: 50px;
 }
 
 .link-tel {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
-.contacts-nav .link:hover,
-.contacts-nav .link:focus
+.contacts-nav :hover,
+.contacts-nav :focus
  {
 color: var(--accent-color);
+}
+
+.contacts-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.link:hover svg,
+.link:focus svg,
+.link-tel:hover svg,
+.link-tel:focus svg
+{
+    fill: var(--accent-color);
 }
 
 /* Банер */
@@ -162,6 +179,16 @@ color: var(--accent-color);
         text-align: center;
         padding: 200px 0;
         background-color: var(--primary-background-color);
+
+        max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/baner.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
        
 }
 
@@ -211,6 +238,16 @@ color: var(--accent-color);
 
 .benefits-item{
     max-width: 270px;
+}
+
+.benefits-icon{
+    background-color: var(--secondary-background-color);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .benefits-item:not(:last-child){
@@ -263,6 +300,8 @@ margin-right: 30px;
 }
 
 .team-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     text-align: center;
     max-width: 270px;
 
@@ -302,9 +341,90 @@ margin-right: 30px;
 }
 
 .team-text{
+        margin-bottom: 16px;
         font-size: 16px;
         line-height: 1.19;
         color: var(--secondary-text-color);
+}
+
+.team-icon{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.team-icon:hover{
+        fill: var(--primary-color-white);
+        background-color: var(--accent-color);
+}
+
+.team-follow-list{
+        height: 44px;
+        display: flex;
+        justify-content: center;
+
+}
+
+
+.team-follow-list :not(:last-child){
+    margin-right: 10px;
+}
+
+.team-icon{
+    fill: var(--primary-icon-color);
+}
+
+/* Клієнти */
+.clients-title{
+        margin-bottom: 50px;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.19;
+        color: var(--primary-text-color);
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.clients-list{
+    padding-bottom: 94px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-item{
+        border-radius: 4px;
+        border: 1px solid var(--primary-icon-color);
+        width: 170px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+.clients-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+border: 1px solid var(--accent-color);
+}
+.clients-icon{
+display: flex;
+fill: var(--primary-icon-color);
+}
+
+.clients-icon:hover,
+.clients-icon:focus{
+    fill: var(--accent-color);
 }
 
 /* Портфоліо*/
@@ -356,8 +476,17 @@ background-color: var(--accent-color);
 
 .portfolio-item{
     flex-basis: calc((100% - 2 * 30px) / 3);
-
 }
+
+.portfolio-link{
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-content{
     padding: 20px 24px;
     border: 1px solid var(--border-portfolio);
@@ -375,6 +504,10 @@ background-color: var(--accent-color);
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--primary-background-color);
+}
+
+.footer-container{
+    display: flex;
 }
 
 
@@ -419,4 +552,50 @@ background-color: var(--accent-color);
     font-style: normal;
     line-height: 1.71;
     color:var(--primary-footer-contacts);
+}
+
+/* Підписка */
+.follow{
+    padding-top: 12px;
+    margin-left: 70px;
+}
+
+.follow-title{
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: var(--primary-color-white);
+}
+
+.follow-list{
+    margin-top: 20px;
+    width: 206px;
+    height: 44px;
+    display: flex;
+}
+
+.follow-item{
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-item:hover,
+.follow-item:focus{
+    background-color: var(--accent-color);
+}
+
+.follow-icon{
+    fill: var(--primary-color-white);
+}
+
+.follow-item:not(:last-child){
+    margin-right: 10px;
 }
