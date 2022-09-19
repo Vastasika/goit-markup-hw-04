@@ -510,6 +510,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .footer-container{
     display: flex;
+    align-items: baseline;
 }
 
 
@@ -558,7 +559,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 /* Підписка */
 .follow{
-    padding-top: 12px;
     margin-left: 70px;
 }
 
@@ -581,8 +581,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     display: flex;
 }
 
-.follow-item{
+.follow-icon{
     width: 44px;
+    height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -590,9 +591,15 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     align-items: center;
 }
 
-.follow-item:hover,
-.follow-item:focus{
+.follow-icon:hover,
+.follow-icon:focus{
     background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .follow-icon{
