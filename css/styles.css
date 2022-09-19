@@ -414,17 +414,21 @@ margin-right: 30px;
     margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-border: 1px solid var(--accent-color);
-}
 .clients-icon{
-display: flex;
-fill: var(--primary-icon-color);
+ border-radius: 4px;
+ border: 1px solid var(--primary-icon-color);
+ fill: var(--primary-icon-color);
+ width: 170px;
+ height: 92px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .clients-icon:hover,
 .clients-icon:focus{
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
     fill: var(--accent-color);
 }
 
